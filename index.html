@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SKYGATES - Elite Construction & Architectural Engineering. Shaping modern skylines with excellence.">
+    <title>SKYGATES | Elite Construction Group</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <a href="index.html" class="logo">
+            <img src="logo.jpeg" alt="SKYGATES Logo" style="height: 50px; vertical-align: middle;">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-cta">Work With Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Engineering The <br>Future Of Living</h1>
+            <p>SKYGATES delivers world-class construction solutions, merging architectural brilliance with sustainable engineering practices.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+                <a href="#" class="btn btn-primary" id="openPopup">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h4 class="counter" data-target="320">0</h4>
+            <p>Elite Projects</p>
+        </div>
+        <div class="stat-item">
+            <h4 class="counter" data-target="12">0</h4>
+            <p>Countries</p>
+        </div>
+        <div class="stat-item">
+            <h4 class="counter" data-target="850">0</h4>
+            <p>Experts</p>
+        </div>
+        <div class="stat-item">
+            <h4 class="counter" data-target="100">0</h4>
+            <p>Quality Score</p>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section id="services">
+        <div class="section-title">
+            <span>Our Core Capabilities</span>
+            <h2>Excellence In Every Detail</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" style="padding: 0; overflow: hidden;">
+                <img src="assets/azure.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Residential">
+                <div style="padding: 30px;">
+                    <h3 style="margin-top: 0;">Architectural Design</h3>
+                    <p>Creating iconic structures that balance aesthetic beauty with functional efficiency.</p>
+                </div>
+            </div>
+            <div class="feature-card" style="padding: 0; overflow: hidden;">
+                <img src="assets/commercial.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Commercial">
+                <div style="padding: 30px;">
+                    <h3 style="margin-top: 0;">Civil Engineering</h3>
+                    <p>Advanced structural solutions for bridges, tunnels, and complex urban infrastructure.</p>
+                </div>
+            </div>
+            <div class="feature-card" style="padding: 0; overflow: hidden;">
+                <img src="assets/industrial.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Industrial">
+                <div style="padding: 30px;">
+                    <h3 style="margin-top: 0;">Sustainable Building</h3>
+                    <p>Leading the industry in eco-friendly materials and energy-efficient construction.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="services.html" style="color: var(--primary-blue); font-weight: 700; text-decoration: none;">Explore All Services <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Featured Portfolio -->
+    <section style="background: #fff;">
+        <div class="section-title">
+            <span>Recent Masterpieces</span>
+            <h2>Crafting Iconic Skylines</h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="assets/azure.jpg" alt="Luxury Residential">
+                <div class="portfolio-overlay">
+                    <h3>The Azure Heights</h3>
+                    <p>Luxury Residential Complex | Dubai</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/nexus.jpg" alt="Corporate Hub">
+                <div class="portfolio-overlay">
+                    <h3>Nexus Corporate Hub</h3>
+                    <p>Smart Commercial Center | Singapore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Methodology -->
+    <section style="background: #f0f4f8;">
+        <div class="section-title">
+            <span>Our Approach</span>
+            <h2>How We Build Excellence</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <div style="text-align: center; padding: 30px;">
+                <img src="assets/method1.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Planning">
+                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">01. Strategic Planning</h3>
+                <p style="color: var(--gray-text); font-size: 0.9rem;">Meticulous blueprinting and feasibility studies to ensure project viability.</p>
+            </div>
+            <div style="text-align: center; padding: 30px;">
+                <img src="assets/method2.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Design">
+                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">02. Precision Design</h3>
+                <p style="color: var(--gray-text); font-size: 0.9rem;">Integrating BIM technology for flawless architectural execution.</p>
+            </div>
+            <div style="text-align: center; padding: 30px;">
+                <img src="assets/nexus.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Construction">
+                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">03. Expert Execution</h3>
+                <p style="color: var(--gray-text); font-size: 0.9rem;">On-site management with the highest safety and quality standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="section-title">
+            <span>Client Voices</span>
+            <h2>Trusted By Global Leaders</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border-left: 5px solid var(--accent-blue);">
+                <p style="font-style: italic; color: var(--gray-text); margin-bottom: 20px;">"SKYGATES transformed our vision into a structural masterpiece. Their attention to detail in the Nexus Hub was beyond anything we expected."</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <img src="assets/client1.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="Client">
+                    <div>
+                        <h4 style="color: var(--deep-blue);">Jonathan Reed</h4>
+                        <p style="font-size: 0.8rem; color: var(--accent-blue);">CEO, Global Tech Corp</p>
+                    </div>
+                </div>
+            </div>
+            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border-left: 5px solid var(--accent-blue);">
+                <p style="font-style: italic; color: var(--gray-text); margin-bottom: 20px;">"Their commitment to sustainable building is what sets them apart. The Eco-Central Mall is a testament to their green engineering prowess."</p>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <img src="assets/client2.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="Client">
+                    <div>
+                        <h4 style="color: var(--deep-blue);">Sarah Jenkins</h4>
+                        <p style="font-size: 0.8rem; color: var(--accent-blue);">Director, Green Urban Labs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Popup Overlay -->
+    <div class="popup-overlay" id="contactPopup">
+        <div class="popup-content">
+            <span class="close-popup" id="closePopup">&times;</span>
+            <div class="popup-img"></div>
+            <div class="popup-form">
+                <h2>Let's Start Your <br>Next Project</h2>
+                <p>Contact our experts today for a premium consultation and custom quote.</p>
+                <form id="premiumInquiry">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <select style="width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9;">
+                        <option value="">Select Service</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="industrial">Industrial</option>
+                    </select>
+                    <textarea placeholder="Tell us about your vision" style="height: 120px;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1rem;">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px;">
+            <div>
+                <a href="#" class="logo" style="color: #fff; margin-bottom: 20px; display: block;">
+                    <img src="logo.jpeg" alt="SKYGATES Logo" style="height: 50px; vertical-align: middle;">
+                </a>
+                <p style="color: #aaa; font-size: 0.9rem;">The global leader in high-end construction and architectural engineering. Building tomorrow, today.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="margin-bottom: 20px;">Quick Links</h4>
+                <ul style="list-style: none; line-height: 2;">
+                    <li><a href="about.html" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                    <li><a href="services.html" style="color: #aaa; text-decoration: none;">Our Services</a></li>
+                    <li><a href="portfolio.html" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
+                    <li><a href="contact.html" style="color: #aaa; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px;">Headquarters</h4>
+                <p style="color: #aaa; font-size: 0.9rem;">124 Luxury Tower, Skyline Ave<br>New York, NY 10001<br>+1 (555) 000-SKYGATE</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SKYGATES Construction Group. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
