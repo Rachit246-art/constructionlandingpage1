@@ -499,7 +499,19 @@ section {
     color: white;
 }
 
-.why-choose-us .section-title h2 { color: white; }
+.why-choose-us {
+    background: #0a1118;
+    padding: 120px 8%;
+    color: white;
+}
+
+.why-choose-us .section-title h2 {
+    color: white;
+}
+
+.why-choose-us .section-title span {
+    color: var(--accent);
+}
 
 .points-grid {
     display: grid;
@@ -508,15 +520,17 @@ section {
 }
 
 .point-item {
-    padding: 30px;
+    padding: 40px;
     background: rgba(255,255,255,0.05);
     border-radius: 20px;
     transition: var(--transition);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .point-item:hover {
-    background: rgba(255,255,255,0.1);
-    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-10px);
+    border-color: var(--accent);
 }
 
 .point-item i {
