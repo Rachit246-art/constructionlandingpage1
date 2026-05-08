@@ -9,12 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
+    });
 
-        if (window.scrollY > 500) {
-            backToTop.classList.add('active');
-        } else {
-            backToTop.classList.remove('active');
-        }
+    // --- Brand Logo Fallback ---
+    const brandImages = document.querySelectorAll('.brand-item img');
+    brandImages.forEach(img => {
+        img.onerror = function() {
+            const brandName = this.alt;
+            const parent = this.parentElement;
+            parent.innerHTML = `<span class="brand-fallback">${brandName}</span>`;
+        };
     });
 
     // --- Mobile Menu Toggle ---
@@ -157,6 +161,49 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             alert('Your message has been sent successfully. We will get back to you soon.');
             contactForm.reset();
+        });
+    }
+
+    // --- Premium Popup Logic ---
+    const servicePopup = document.getElementById('servicePopup');
+    const closePopup = document.getElementById('closePopup');
+    const servicesSection = document.getElementById('services');
+    let popupShown = false;
+
+    if (servicePopup && servicesSection) {
+        const popupObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !popupShown) {
+                setTimeout(() => {
+                    servicePopup.classList.add('active');
+                    popupShown = true;
+                }, 1000); // Small delay for better UX
+                popupObserver.unobserve(servicesSection);
+            }
+        }, { threshold: 0.2 });
+
+        popupObserver.observe(servicesSection);
+    }
+
+    if (closePopup) {
+        closePopup.addEventListener('click', () => {
+            servicePopup.classList.remove('active');
+        });
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        if (e.target === servicePopup) {
+            servicePopup.classList.remove('active');
+        }
+    });
+
+    const popupForm = document.getElementById('popupForm');
+    if (popupForm) {
+        popupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Congratulations! Your premium offer has been claimed. Our representative will contact you shortly.');
+            servicePopup.classList.remove('active');
+            popupForm.reset();
         });
     }
 });
