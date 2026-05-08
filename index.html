@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SKYGATES - Elite Construction & Architectural Engineering. Shaping modern skylines with excellence.">
-    <title>SKYGATES | Elite Construction Group</title>
+    <meta name="description" content="SKYGATES - Luxury Construction For Modern Bangalore Living. Premium villa construction, turnkey solutions, and modern architectural execution.">
+    <title>SKYGATES | Premium Construction Landing Page</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,216 +21,459 @@
 
     <!-- Header -->
     <header id="mainHeader">
-        <a href="index.html" class="logo">
+        <a href="#hero" class="logo">
             <img src="logo.jpeg" alt="SKYGATES Logo" style="height: 50px; vertical-align: middle;">
         </a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="nav-cta">Work With Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" class="nav-cta">Get Quote</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Engineering The <br>Future Of Living</h1>
-            <p>SKYGATES delivers world-class construction solutions, merging architectural brilliance with sustainable engineering practices.</p>
-            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
-                <a href="#" class="btn btn-primary" id="openPopup">Request Quote</a>
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/hero.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/azure.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/global.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/nexus.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <span class="badge">Premium Villa Construction</span>
+                <h1>Luxury Construction For <br><span>Modern Bangalore Living</span></h1>
+                <p>Premium villa construction, turnkey solutions, and modern architectural execution crafted with precision, transparency, and timeless design.</p>
+                
+                <div class="hero-ctas">
+                    <a href="#lead-form" class="btn btn-primary">Get Free Consultation</a>
+                    <a href="#contact" class="btn btn-outline">Book Site Visit</a>
+                </div>
+                
+                <div class="trust-line">
+                    <span><i class="fas fa-check-circle"></i> On-Time Delivery</span>
+                    <span><i class="fas fa-check-circle"></i> Premium Materials</span>
+                    <span><i class="fas fa-check-circle"></i> Transparent Pricing</span>
+                </div>
+            </div>
+            
+            <div class="hero-right" id="lead-form">
+                <div class="lead-card">
+                    <h3>Start Your Dream Project</h3>
+                    <p>Fill out the form below for a premium consultation.</p>
+                    <form id="heroForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Project Type</option>
+                                <option value="villa">Luxury Villa</option>
+                                <option value="turnkey">Turnkey Construction</option>
+                                <option value="interior">Interior Execution</option>
+                                <option value="renovation">Renovation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Location (Bangalore)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Estimated Budget" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Request Consultation</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stat-item">
-            <h4 class="counter" data-target="320">0</h4>
-            <p>Elite Projects</p>
-        </div>
-        <div class="stat-item">
-            <h4 class="counter" data-target="12">0</h4>
-            <p>Countries</p>
-        </div>
-        <div class="stat-item">
-            <h4 class="counter" data-target="850">0</h4>
-            <p>Experts</p>
-        </div>
-        <div class="stat-item">
-            <h4 class="counter" data-target="100">0</h4>
-            <p>Quality Score</p>
+    <!-- Show Numbers -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4 class="counter" data-target="150">0</h4>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <h4 class="counter" data-target="10">0</h4>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h4 class="counter" data-target="12">0</h4>
+                <p>L+ Sq Ft Delivered</p>
+            </div>
+            <div class="stat-item">
+                <h4 class="counter" data-target="98">0</h4>
+                <p>Client Satisfaction</p>
+            </div>
         </div>
     </section>
 
-    <!-- Featured Services -->
-    <section id="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="section-title">
-            <span>Our Core Capabilities</span>
-            <h2>Excellence In Every Detail</h2>
+            <span>What We Do</span>
+            <h2>Our Premium Construction Services</h2>
         </div>
-        <div class="features-grid">
-            <div class="feature-card" style="padding: 0; overflow: hidden;">
-                <img src="assets/azure.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Residential">
-                <div style="padding: 30px;">
-                    <h3 style="margin-top: 0;">Architectural Design</h3>
-                    <p>Creating iconic structures that balance aesthetic beauty with functional efficiency.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="assets/azure.jpg" alt="Luxury Villa Construction">
+                </div>
+                <div class="service-content">
+                    <h3>Luxury Villa Construction</h3>
+                    <p>High-end custom villa execution with premium finishing and modern aesthetics.</p>
                 </div>
             </div>
-            <div class="feature-card" style="padding: 0; overflow: hidden;">
-                <img src="assets/commercial.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Commercial">
-                <div style="padding: 30px;">
-                    <h3 style="margin-top: 0;">Civil Engineering</h3>
-                    <p>Advanced structural solutions for bridges, tunnels, and complex urban infrastructure.</p>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="assets/method2.jpg" alt="Turnkey Construction">
+                </div>
+                <div class="service-content">
+                    <h3>Turnkey Construction</h3>
+                    <p>Complete end-to-end project management from blueprint to final handover.</p>
                 </div>
             </div>
-            <div class="feature-card" style="padding: 0; overflow: hidden;">
-                <img src="assets/industrial.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Industrial">
-                <div style="padding: 30px;">
-                    <h3 style="margin-top: 0;">Sustainable Building</h3>
-                    <p>Leading the industry in eco-friendly materials and energy-efficient construction.</p>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="assets/vision.jpg" alt="Architectural Design">
+                </div>
+                <div class="service-content">
+                    <h3>Architectural Design</h3>
+                    <p>Modern and vastu-compliant planning tailored to your lifestyle and needs.</p>
                 </div>
             </div>
-        </div>
-        <div style="text-align: center; margin-top: 60px;">
-            <a href="services.html" style="color: var(--primary-blue); font-weight: 700; text-decoration: none;">Explore All Services <i class="fas fa-arrow-right"></i></a>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="assets/method1.jpg" alt="Interior Execution">
+                </div>
+                <div class="service-content">
+                    <h3>Interior Execution</h3>
+                    <p>Luxury interiors crafted for elegant living with focus on detail and functionality.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="assets/industrial.jpg" alt="Renovation & Remodeling">
+                </div>
+                <div class="service-content">
+                    <h3>Renovation & Remodeling</h3>
+                    <p>Upgrade your existing spaces with modern aesthetics and structural integrity.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Featured Portfolio -->
-    <section style="background: #fff;">
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
         <div class="section-title">
-            <span>Recent Masterpieces</span>
-            <h2>Crafting Iconic Skylines</h2>
+            <span>Our Masterpieces</span>
+            <h2>Projects That Define Excellence</h2>
         </div>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="assets/azure.jpg" alt="Luxury Residential">
-                <div class="portfolio-overlay">
-                    <h3>The Azure Heights</h3>
-                    <p>Luxury Residential Complex | Dubai</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/nexus.jpg" alt="Modern Villa - Whitefield">
+                    <div class="project-badge">Completed</div>
+                </div>
+                <div class="project-info">
+                    <h3>Modern Villa — Whitefield</h3>
+                    <p>Contemporary luxury villa with premium elevation and smart interiors.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/Whitefield,+Bangalore" target="_blank" class="location-link">Whitefield, Bangalore</a></span>
+                        <span><i class="fas fa-expand-arrows-alt"></i> 4,500 Sq Ft</span>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <img src="assets/nexus.jpg" alt="Corporate Hub">
-                <div class="portfolio-overlay">
-                    <h3>Nexus Corporate Hub</h3>
-                    <p>Smart Commercial Center | Singapore</p>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/global.jpg" alt="Luxury Villa - Sarjapur">
+                    <div class="project-badge">In Progress</div>
+                </div>
+                <div class="project-info">
+                    <h3>The Grand Manor — Sarjapur</h3>
+                    <p>Architectural marvel featuring a fusion of classical and modern design elements.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/Sarjapur+Road,+Bangalore" target="_blank" class="location-link">Sarjapur Road</a></span>
+                        <span><i class="fas fa-expand-arrows-alt"></i> 6,200 Sq Ft</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Methodology -->
-    <section style="background: #f0f4f8;">
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
         <div class="section-title">
-            <span>Our Approach</span>
-            <h2>How We Build Excellence</h2>
+            <span>Why Us</span>
+            <h2>Why Clients Choose Us</h2>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-            <div style="text-align: center; padding: 30px;">
-                <img src="assets/method1.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Planning">
-                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">01. Strategic Planning</h3>
-                <p style="color: var(--gray-text); font-size: 0.9rem;">Meticulous blueprinting and feasibility studies to ensure project viability.</p>
+        <div class="points-grid">
+            <div class="point-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4>Transparent Pricing</h4>
+                <p>Detailed quotations with no hidden costs. We value your trust and money.</p>
             </div>
-            <div style="text-align: center; padding: 30px;">
-                <img src="assets/method2.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Design">
-                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">02. Precision Design</h3>
-                <p style="color: var(--gray-text); font-size: 0.9rem;">Integrating BIM technology for flawless architectural execution.</p>
+            <div class="point-item">
+                <i class="fas fa-gem"></i>
+                <h4>Premium Quality Materials</h4>
+                <p>Only trusted brands and long-lasting materials used for every project.</p>
             </div>
-            <div style="text-align: center; padding: 30px;">
-                <img src="assets/nexus.jpg" style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;" alt="Construction">
-                <h3 style="color: var(--deep-blue); margin-bottom: 10px;">03. Expert Execution</h3>
-                <p style="color: var(--gray-text); font-size: 0.9rem;">On-site management with the highest safety and quality standards.</p>
+            <div class="point-item">
+                <i class="fas fa-user-shield"></i>
+                <h4>Dedicated Project Management</h4>
+                <p>Single point of contact from start to finish for a hassle-free experience.</p>
+            </div>
+            <div class="point-item">
+                <i class="fas fa-shipping-fast"></i>
+                <h4>Timely Delivery</h4>
+                <p>Structured execution with milestone tracking to ensure on-time handover.</p>
+            </div>
+            <div class="point-item">
+                <i class="fas fa-drafting-compass"></i>
+                <h4>Modern Design Approach</h4>
+                <p>Luxury-focused architecture and finishing that stands the test of time.</p>
+            </div>
+            <div class="point-item">
+                <i class="fas fa-key"></i>
+                <h4>End-to-End Solutions</h4>
+                <p>From initial planning and approvals to final handover, we do it all.</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section>
+    <!-- Construction Process Section -->
+    <section id="process" class="process">
+        <div class="section-title">
+            <span>Our Workflow</span>
+            <h2>Our Simple 5-Step Process</h2>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-num">01</div>
+                <h4>Consultation</h4>
+                <p>Understanding your vision, requirements, and budget constraints.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">02</div>
+                <h4>Planning & Design</h4>
+                <p>Architecture, approvals, and detailed cost estimation.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">03</div>
+                <h4>Construction</h4>
+                <p>Execution with quality monitoring and milestone updates.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">04</div>
+                <h4>Interiors & Finishing</h4>
+                <p>Premium finishing and detailing to bring your dream to life.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">05</div>
+                <h4>Handover</h4>
+                <p>Final inspection and delivery of your new dream space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials & Brands Section -->
+    <section class="brands">
+        <div class="section-title">
+            <span>Quality Guaranteed</span>
+            <h2>Built With Trusted Brands</h2>
+        </div>
+        <div class="brands-grid">
+            <div class="brand-item"><span>Ultratech</span></div>
+            <div class="brand-item"><span>Asian Paints</span></div>
+            <div class="brand-item"><span>Kajaria</span></div>
+            <div class="brand-item"><span>Havells</span></div>
+            <div class="brand-item"><span>Jaquar</span></div>
+            <div class="brand-item"><span>Schneider</span></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
         <div class="section-title">
             <span>Client Voices</span>
-            <h2>Trusted By Global Leaders</h2>
+            <h2>What Our Clients Say</h2>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border-left: 5px solid var(--accent-blue);">
-                <p style="font-style: italic; color: var(--gray-text); margin-bottom: 20px;">"SKYGATES transformed our vision into a structural masterpiece. Their attention to detail in the Nexus Hub was beyond anything we expected."</p>
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <img src="assets/client1.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="Client">
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="assets/client1.jpg" alt="Client">
                     <div>
-                        <h4 style="color: var(--deep-blue);">Jonathan Reed</h4>
-                        <p style="font-size: 0.8rem; color: var(--accent-blue);">CEO, Global Tech Corp</p>
+                        <h4>Ramesh Kumar</h4>
+                        <p>Villa Owner, Whitefield</p>
                     </div>
                 </div>
+                <p class="testimonial-text">"The transparency and quality exceeded our expectations. From design to handover, the team at SKYGATES was professional and timely."</p>
             </div>
-            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow); border-left: 5px solid var(--accent-blue);">
-                <p style="font-style: italic; color: var(--gray-text); margin-bottom: 20px;">"Their commitment to sustainable building is what sets them apart. The Eco-Central Mall is a testament to their green engineering prowess."</p>
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <img src="assets/client2.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="Client">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="assets/client2.jpg" alt="Client">
                     <div>
-                        <h4 style="color: var(--deep-blue);">Sarah Jenkins</h4>
-                        <p style="font-size: 0.8rem; color: var(--accent-blue);">Director, Green Urban Labs</p>
+                        <h4>Anita Sharma</h4>
+                        <p>CEO, TechPark Interiors</p>
                     </div>
+                </div>
+                <p class="testimonial-text">"Choosing SKYGATES for our turnkey project was the best decision. Their attention to detail in the structural work is commendable."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="section-title">
+            <span>Help Center</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is the construction cost in Bangalore? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Construction costs in Bangalore typically range from ₹1,800 to ₹3,500 per sq ft depending on the quality of materials, location, and complexity of the design. We provide detailed quotations to give you an exact estimate.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you provide turnkey solutions? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we specialize in turnkey solutions where we manage everything from planning and approvals to material procurement, construction, and interior finishing.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How long does construction take? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>A typical luxury villa construction takes between 10 to 14 months, depending on the scale and complexity of the project. We provide a detailed project timeline at the start.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can designs be customized? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Every project we undertake is unique and customized to the client's specific needs, lifestyle, and aesthetic preferences.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you assist with approvals? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we assist our clients with all necessary government approvals, plan sanctions, and documentation required for the construction process.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Premium Popup Overlay -->
-    <div class="popup-overlay" id="contactPopup">
-        <div class="popup-content">
-            <span class="close-popup" id="closePopup">&times;</span>
-            <div class="popup-img"></div>
-            <div class="popup-form">
-                <h2>Let's Start Your <br>Next Project</h2>
-                <p>Contact our experts today for a premium consultation and custom quote.</p>
-                <form id="premiumInquiry">
-                    <input type="text" placeholder="Your Name" required>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Build Your <br>Future Together</h2>
+                <p>Have a project in mind? Contact our experts today for a site visit and detailed quotation.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@skygates.in</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>124 Luxury Tower, Skyline Ave, Bangalore</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="mainContactForm">
+                    <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
-                    <select style="width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9;">
-                        <option value="">Select Service</option>
-                        <option value="residential">Residential</option>
-                        <option value="commercial">Commercial</option>
-                        <option value="industrial">Industrial</option>
-                    </select>
-                    <textarea placeholder="Tell us about your vision" style="height: 120px;"></textarea>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-size: 1rem;">Send Inquiry</button>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <textarea placeholder="Tell us about your dream project" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="cta-content">
+            <h2>Let's Build Your Dream Space</h2>
+            <p>Book a free consultation with our experts today and start your journey towards your dream home.</p>
+            <div class="cta-buttons">
+                <a href="tel:+919876543210" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/919876543210" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+                <a href="#hero" class="btn btn-outline-white">Get Estimate</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px;">
-            <div>
-                <a href="#" class="logo" style="color: #fff; margin-bottom: 20px; display: block;">
-                    <img src="logo.jpeg" alt="SKYGATES Logo" style="height: 50px; vertical-align: middle;">
-                </a>
-                <p style="color: #aaa; font-size: 0.9rem;">The global leader in high-end construction and architectural engineering. Building tomorrow, today.</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="logo.jpeg" alt="SKYGATES Logo" style="height: 50px; margin-bottom: 20px;">
+                <p>The leader in luxury construction and architectural engineering in Bangalore. Building tomorrow, today.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4 style="margin-bottom: 20px;">Quick Links</h4>
-                <ul style="list-style: none; line-height: 2;">
-                    <li><a href="about.html" style="color: #aaa; text-decoration: none;">About Us</a></li>
-                    <li><a href="services.html" style="color: #aaa; text-decoration: none;">Our Services</a></li>
-                    <li><a href="portfolio.html" style="color: #aaa; text-decoration: none;">Portfolio</a></li>
-                    <li><a href="contact.html" style="color: #aaa; text-decoration: none;">Contact</a></li>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
-            <div>
-                <h4 style="margin-bottom: 20px;">Headquarters</h4>
-                <p style="color: #aaa; font-size: 0.9rem;">124 Luxury Tower, Skyline Ave<br>New York, NY 10001<br>+1 (555) 000-SKYGATE</p>
+            <div class="footer-map">
+                <h4>Our Location</h4>
+                <div class="map-container">
+                    <!-- Placeholder for Google Maps - Using a generic embed for Bangalore -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d77.4908522!3d12.9538477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfad3685100e2!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715147800000!5m2!1sen!2sin" width="100%" height="150" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-contact-info" style="margin-top: 15px;">
+                    <p><i class="fas fa-map-marker-alt"></i> 124 Luxury Tower, Skyline Ave, Bangalore</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@skygates.in</p>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 SKYGATES Construction Group. All rights reserved.
+            <p>&copy; 2026 SKYGATES Construction Group. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <script src="script.js"></script>
 </body>
