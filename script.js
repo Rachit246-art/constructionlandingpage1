@@ -136,6 +136,21 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(nextSlide, 5000); // Change slide every 5 seconds
     }
 
+    // --- Reveal on Scroll ---
+    const revealElements = document.querySelectorAll('.reveal, .reveal-stagger');
+    if (revealElements.length > 0) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    // revealObserver.unobserve(entry.target); // Keep observing if you want them to animate again, or unobserve for one-time
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    }
+
     const contactForm = document.getElementById('mainContactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
