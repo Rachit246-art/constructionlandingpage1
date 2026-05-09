@@ -21,6 +21,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     color: var(--dark);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* --- Reveal Animations --- */
@@ -613,11 +616,12 @@ section {
 }
 
 .brand-fallback {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
-    color: #ccc;
+    color: var(--primary);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 /* Testimonials */
@@ -757,11 +761,13 @@ section {
     gap: 20px;
     margin-bottom: 20px;
     font-weight: 600;
+    text-align: left;
 }
 
 .info-item i {
     width: 45px;
     height: 45px;
+    flex-shrink: 0;
     background: var(--accent);
     color: white;
     border-radius: 50%;
@@ -1230,6 +1236,7 @@ footer {
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
     section { padding: 80px 5%; }
     .projects-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
@@ -1238,4 +1245,14 @@ footer {
     .stat-item h4 { font-size: 2.2rem; }
     .trust-line { flex-direction: column; gap: 10px; }
     .lead-card { padding: 30px 20px; }
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+    .brand-item {
+        opacity: 1;
+        filter: grayscale(0);
+    }
 }
