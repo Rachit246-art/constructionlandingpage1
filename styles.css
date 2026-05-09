@@ -91,8 +91,7 @@ header {
     width: 100%;
     z-index: 1000;
     padding: 15px 8%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -942,8 +941,10 @@ footer {
     background: var(--white);
     width: 100%;
     max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 30px;
-    overflow: hidden;
     position: relative;
     animation: modalIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -960,7 +961,7 @@ footer {
     font-size: 1.8rem;
     color: var(--primary);
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
     width: 35px;
     height: 35px;
     background: rgba(255,255,255,0.9);

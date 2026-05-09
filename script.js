@@ -24,18 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Mobile Menu Toggle ---
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('nav');
+    const menuIcon = mobileMenuBtn ? mobileMenuBtn.querySelector('i') : null;
     
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', () => {
             // Simple toggle for now - could be improved with a real mobile menu
             const isVisible = nav.style.display === 'block';
             nav.style.display = isVisible ? 'none' : 'block';
+            
+            if (menuIcon) {
+                if (isVisible) {
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-times');
+                }
+            }
+
             if (!isVisible) {
                 nav.style.position = 'absolute';
                 nav.style.top = '100%';
                 nav.style.left = '0';
                 nav.style.width = '100%';
-                nav.style.background = 'white';
+                nav.style.background = 'var(--white)';
                 nav.style.padding = '20px';
                 nav.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
                 const navUl = nav.querySelector('ul');
@@ -58,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Close mobile menu if open
                 if (window.innerWidth <= 992) {
                     nav.style.display = 'none';
+                    if (menuIcon) {
+                        menuIcon.classList.remove('fa-times');
+                        menuIcon.classList.add('fa-bars');
+                    }
                 }
             }
         });
